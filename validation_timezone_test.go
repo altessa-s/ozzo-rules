@@ -83,16 +83,15 @@ func TestTimezoneRule(t *testing.T) {
 		// Invalid timezones
 		{"invalid America/InvalidCity", "America/InvalidCity", true},
 		{"invalid timezone", "Invalid/Timezone", true},
-		{"valid lowercase", "america/new_york", false}, // Go accepts lowercase
 		{"invalid with space", "America/New York", true},
 		{"invalid with dash", "America/New-York", true},
 		{"invalid empty", "", true},
 		{"invalid single word", "NewYork", true},
 		{"invalid numeric", "GMT+5", true},
 		{"invalid offset", "+05:00", true},
-		{"invalid abbreviation", "EST", false}, // Actually supported by Go
-		{"invalid PST", "PST", false},          // Actually supported by Go
-		{"invalid CST", "CST", false},          // Actually supported by Go
+		{"valid abbreviation EST", "EST", false}, // Supported by Go
+		{"valid abbreviation PST", "PST", false}, // Supported by Go
+		{"valid abbreviation CST", "CST", false}, // Supported by Go
 
 		// Invalid types
 		{"nil value", nil, true},
@@ -106,10 +105,8 @@ func TestTimezoneRule(t *testing.T) {
 		{"pointer to invalid", timezoneStrPtr("Invalid"), true},
 		{"pointer to nil", (*string)(nil), true},
 
-		// Case sensitivity
-		{"valid lowercase utc", "utc", false},              // Go accepts case variations
-		{"valid uppercase EUROPE", "EUROPE/LONDON", false}, // Go accepts case variations
-		{"valid mixed case", "Europe/london", false},       // Go accepts case variations
+		// Note: Case sensitivity tests removed - behavior is platform-dependent
+		// (macOS has case-insensitive filesystem, Linux is case-sensitive)
 	}
 
 	for _, tt := range tests {
