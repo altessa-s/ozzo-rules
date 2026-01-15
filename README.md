@@ -3,6 +3,7 @@
 [![Lint](https://github.com/altessa-s/ozzo-rules/actions/workflows/lint.yml/badge.svg)](https://github.com/altessa-s/ozzo-rules/actions/workflows/lint.yml)
 [![Go Report Card](https://goreportcard.com/badge/github.com/altessa-s/ozzo-rules)](https://goreportcard.com/report/github.com/altessa-s/ozzo-rules)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Release](https://img.shields.io/github/v/release/altessa-s/ozzo-rules)](https://github.com/altessa-s/ozzo-rules/releases)
 
 
 Package `ozzo_rules` provides a comprehensive set of additional validation rules for use with the [ozzo-validation](https://github.com/go-ozzo/ozzo-validation) package. It extends the standard validation capabilities with specialized validators for geographic data, contact information, identity verification, network addresses, and region-specific formats, all optimized with LRU caching for enhanced performance.
