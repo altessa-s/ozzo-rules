@@ -2,6 +2,7 @@
 [![Test](https://github.com/altessa-s/ozzo-rules/actions/workflows/test.yml/badge.svg)](https://github.com/altessa-s/ozzo-rules/actions/workflows/test.yml)
 [![Lint](https://github.com/altessa-s/ozzo-rules/actions/workflows/lint.yml/badge.svg)](https://github.com/altessa-s/ozzo-rules/actions/workflows/lint.yml)
 [![Go Report Card](https://goreportcard.com/badge/github.com/altessa-s/ozzo-rules)](https://goreportcard.com/report/github.com/altessa-s/ozzo-rules)
+[![codecov](https://codecov.io/gh/altessa-s/ozzo-rules/graph/badge.svg)](https://codecov.io/gh/altessa-s/ozzo-rules)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Release](https://img.shields.io/github/v/release/altessa-s/ozzo-rules)](https://github.com/altessa-s/ozzo-rules/releases)
 
